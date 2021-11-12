@@ -24,7 +24,7 @@ class CreateTracksTable extends Migration
             $table->boolean('is_promoted');
             $table->timestamps();
 
-            $table->foreign('member')->references('id')->on('members');
+            $table->foreign('member_id')->references('id')->on('members');
         });
     }
 
